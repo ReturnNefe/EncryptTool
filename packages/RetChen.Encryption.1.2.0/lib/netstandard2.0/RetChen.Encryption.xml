@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RetChen.Encryption</name>
+    </assembly>
+    <members>
+        <member name="T:RetChen.Encryption.AESEncryption">
+            <summary/>
+        </member>
+        <member name="F:RetChen.Encryption.AESEncryption.key">
+            <summary>
+            密钥
+            </summary>
+        </member>
+        <member name="F:RetChen.Encryption.AESEncryption.iv">
+            <summary>
+            初始化向量
+            </summary>
+        </member>
+        <member name="M:RetChen.Encryption.AESEncryption.#ctor(System.Byte[],System.Byte[])">
+            <summary/>
+        </member>
+        <member name="M:RetChen.Encryption.AESEncryption.#ctor(System.String,System.String)">
+            <summary>
+            初始化 AES
+            </summary>
+            <param name="key">密钥，长度可为 16, 24 或 32</param>
+            <param name="iv">向量（可选）</param>
+        </member>
+        <member name="M:RetChen.Encryption.AESEncryption.RandomKey(System.UInt32)">
+            <summary>
+            生成随机的 AES 密钥（或IV）
+            </summary>
+            <param name="length">密钥长度</param>
+            <returns>生成的密钥</returns>
+        </member>
+        <member name="M:RetChen.Encryption.AESEncryption.RandomKeyString(System.UInt32)">
+            <summary>
+            生成随机的 AES 密钥（或IV）
+            </summary>
+            <param name="length">密钥长度</param>
+            <returns>生成的密钥（字符串）</returns>
+        </member>
+        <member name="M:RetChen.Encryption.AESEncryption.Encrypt(System.Byte[],System.Security.Cryptography.CipherMode,System.Security.Cryptography.PaddingMode)">
+            <summary>
+            加密
+            </summary>
+            <param name="array">待加密的明文</param>
+            <param name="cipherMode">加密模式</param>
+            <param name="paddingMode">填充模式</param>
+            <returns>加密后的密文</returns>
+        </member>
+        <member name="M:RetChen.Encryption.AESEncryption.Decrypt(System.Byte[],System.Security.Cryptography.CipherMode,System.Security.Cryptography.PaddingMode)">
+            <summary>
+            解密
+            </summary>
+            <param name="array">待解密的密文</param>
+            <param name="cipherMode">解密模式</param>
+            <param name="paddingMode">填充模式</param>
+            <returns>解密后的明文</returns>
+        </member>
+        <member name="M:RetChen.Encryption.AESEncryption.Encrypt(System.String,System.Security.Cryptography.CipherMode,System.Security.Cryptography.PaddingMode)">
+            <summary>
+            加密字符串
+            </summary>
+        </member>
+        <member name="M:RetChen.Encryption.AESEncryption.Decrypt(System.String,System.Security.Cryptography.CipherMode,System.Security.Cryptography.PaddingMode)">
+            <summary>
+            解密字符串
+            </summary>
+        </member>
+        <member name="T:RetChen.Encryption.MD5Encryption">
+            <summary/>
+        </member>
+        <member name="M:RetChen.Encryption.MD5Encryption.Encrypt(System.Byte[])">
+            <summary>
+            生成 MD5 摘要
+            </summary>
+            <param name="data">待摘要数据集</param>
+        </member>
+        <member name="M:RetChen.Encryption.MD5Encryption.Encrypt(System.String,System.String)">
+            <summary>
+            生成 MD5 摘要
+            </summary>
+            <param name="data">待摘要数据集</param>
+            <param name="format">摘要格式</param>
+        </member>
+        <member name="T:RetChen.Encryption.RSAEncryption">
+            <summary/>
+        </member>
+        <member name="F:RetChen.Encryption.RSAEncryption.key">
+            <summary>
+            密钥
+            </summary>
+        </member>
+        <member name="F:RetChen.Encryption.RSAEncryption.publicKey">
+            <summary>
+            公钥
+            </summary>
+        </member>
+        <member name="M:RetChen.Encryption.RSAEncryption.#ctor(System.String,System.String)">
+            <summary/>
+        </member>
+        <member name="M:RetChen.Encryption.RSAEncryption.RandomKey(System.String@,System.String@,System.Int32)">
+            <summary>
+            生成密钥
+            </summary>
+            <param name="xmlKeys">生成的公钥和密钥</param>
+            <param name="xmlPublicKey">生成的公钥</param>
+            <param name="keyLength">生成的密钥的长度</param>
+        </member>
+        <member name="M:RetChen.Encryption.RSAEncryption.Encrypt(System.Byte[])">
+            <summary>
+            加密
+            </summary>
+        </member>
+        <member name="M:RetChen.Encryption.RSAEncryption.Decrypt(System.Byte[])">
+            <summary>
+            解密
+            </summary>
+        </member>
+        <member name="M:RetChen.Encryption.RSAEncryption.Encrypt(System.String)">
+            <summary>
+            加密字符串
+            </summary>
+        </member>
+        <member name="M:RetChen.Encryption.RSAEncryption.Decrypt(System.String)">
+            <summary>
+            解密字符串
+            </summary>
+        </member>
+        <member name="M:RetChen.Encryption.RSAEncryption.Sign(System.Byte[])">
+            <summary>
+            对数据签名
+            </summary>
+        </member>
+        <member name="M:RetChen.Encryption.RSAEncryption.Verify(System.Byte[],System.Byte[])">
+            <summary>
+            验证签名
+            </summary>
+        </member>
+        <member name="M:RetChen.Encryption.RSAEncryption.Sign(System.String)">
+            <summary>
+            对字符串前面
+            </summary>
+        </member>
+        <member name="M:RetChen.Encryption.RSAEncryption.Verify(System.String,System.String)">
+            <summary>
+            验证签名
+            </summary>
+        </member>
+    </members>
+</doc>
