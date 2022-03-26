@@ -25,7 +25,7 @@ namespace EncryConsole
                             Console.Write("Console ");
                             Console.ResetColor();
                             Console.WriteLine(FileVersionInfo.GetVersionInfo(System.Reflection.Assembly.GetExecutingAssembly().Location).ProductVersion);
-                            Console.WriteLine("使用 RSA & AES 加密文件.");
+                            Console.WriteLine("使用 AES & RSA 加密文件.");
 
                             Console.WriteLine();
                             Console.WriteLine($"使用方法: encryconsole [options] [arguments]");
@@ -61,7 +61,7 @@ namespace EncryConsole
                             {
                                 "读入的文件",
                                 "输出文件",
-                                "密钥长度, 必须为 2^n, 且不小于 512"
+                                "密钥长度, 例如 4096"
                             };
                             for (int i = 0; i < argumentLines.Length; ++i)
                                 Console.WriteLine($"{"",2}{argumentLines[i],-25}{argumentDescriptions[i]}");
