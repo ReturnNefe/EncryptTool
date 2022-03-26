@@ -23,8 +23,13 @@
 
 ## 效果
 
-![EncryText](https://github.com/Return25/EncryTool/screenshot/encrytext.png)
-![PicMaker](https://github.com/Return25/EncryTool/screenshot/picmaker.png)
+![EncryText](https://github.com/Return25/EncryTool/blob/main/screenshot/encrytext.png)
+
+加密文本
+
+![PicMaker](https://github.com/Return25/EncryTool/blob/main/screenshot/picmaker.png)
+
+将 mp3 文件转换为 png
 
 ## 使用
 
