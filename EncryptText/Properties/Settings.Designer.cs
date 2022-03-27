@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EncryText.Properties {
+namespace EncryptText.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

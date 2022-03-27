@@ -1,5 +1,5 @@
 ﻿
-namespace EncryText
+namespace EncryptText
 {
     partial class Form
     {
@@ -29,8 +29,8 @@ namespace EncryText
         /// </summary>
         private void InitializeComponent()
         {
-            this.encryString = new MetroFramework.Controls.MetroTextBox();
-            this.decryString = new MetroFramework.Controls.MetroTextBox();
+            this.encryptString = new MetroFramework.Controls.MetroTextBox();
+            this.decryptString = new MetroFramework.Controls.MetroTextBox();
             this.button1 = new MetroFramework.Controls.MetroButton();
             this.button2 = new MetroFramework.Controls.MetroButton();
             this.publicKey = new MetroFramework.Controls.MetroTextBox();
@@ -41,71 +41,71 @@ namespace EncryText
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.SuspendLayout();
             // 
-            // encryString
+            // encryptString
             // 
             // 
             // 
             // 
-            this.encryString.CustomButton.Image = null;
-            this.encryString.CustomButton.Location = new System.Drawing.Point(207, 1);
-            this.encryString.CustomButton.Name = "";
-            this.encryString.CustomButton.Size = new System.Drawing.Size(233, 233);
-            this.encryString.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.encryString.CustomButton.TabIndex = 1;
-            this.encryString.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.encryString.CustomButton.UseSelectable = true;
-            this.encryString.CustomButton.Visible = false;
-            this.encryString.Lines = new string[0];
-            this.encryString.Location = new System.Drawing.Point(23, 124);
-            this.encryString.MaxLength = 32767;
-            this.encryString.Multiline = true;
-            this.encryString.Name = "encryString";
-            this.encryString.PasswordChar = '\0';
-            this.encryString.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.encryString.SelectedText = "";
-            this.encryString.SelectionLength = 0;
-            this.encryString.SelectionStart = 0;
-            this.encryString.ShortcutsEnabled = true;
-            this.encryString.Size = new System.Drawing.Size(441, 235);
-            this.encryString.TabIndex = 0;
-            this.encryString.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.encryString.UseSelectable = true;
-            this.encryString.WaterMark = "加密的内容";
-            this.encryString.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.encryString.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.encryptString.CustomButton.Image = null;
+            this.encryptString.CustomButton.Location = new System.Drawing.Point(207, 1);
+            this.encryptString.CustomButton.Name = "";
+            this.encryptString.CustomButton.Size = new System.Drawing.Size(233, 233);
+            this.encryptString.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.encryptString.CustomButton.TabIndex = 1;
+            this.encryptString.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.encryptString.CustomButton.UseSelectable = true;
+            this.encryptString.CustomButton.Visible = false;
+            this.encryptString.Lines = new string[0];
+            this.encryptString.Location = new System.Drawing.Point(23, 124);
+            this.encryptString.MaxLength = 32767;
+            this.encryptString.Multiline = true;
+            this.encryptString.Name = "encryptString";
+            this.encryptString.PasswordChar = '\0';
+            this.encryptString.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.encryptString.SelectedText = "";
+            this.encryptString.SelectionLength = 0;
+            this.encryptString.SelectionStart = 0;
+            this.encryptString.ShortcutsEnabled = true;
+            this.encryptString.Size = new System.Drawing.Size(441, 235);
+            this.encryptString.TabIndex = 0;
+            this.encryptString.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.encryptString.UseSelectable = true;
+            this.encryptString.WaterMark = "加密的内容";
+            this.encryptString.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.encryptString.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // decryString
             // 
             // 
             // 
             // 
-            this.decryString.CustomButton.Image = null;
-            this.decryString.CustomButton.Location = new System.Drawing.Point(207, 1);
-            this.decryString.CustomButton.Name = "";
-            this.decryString.CustomButton.Size = new System.Drawing.Size(233, 233);
-            this.decryString.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.decryString.CustomButton.TabIndex = 1;
-            this.decryString.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.decryString.CustomButton.UseSelectable = true;
-            this.decryString.CustomButton.Visible = false;
-            this.decryString.Lines = new string[0];
-            this.decryString.Location = new System.Drawing.Point(23, 365);
-            this.decryString.MaxLength = 32767;
-            this.decryString.Multiline = true;
-            this.decryString.Name = "decryString";
-            this.decryString.PasswordChar = '\0';
-            this.decryString.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.decryString.SelectedText = "";
-            this.decryString.SelectionLength = 0;
-            this.decryString.SelectionStart = 0;
-            this.decryString.ShortcutsEnabled = true;
-            this.decryString.Size = new System.Drawing.Size(441, 235);
-            this.decryString.TabIndex = 1;
-            this.decryString.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.decryString.UseSelectable = true;
-            this.decryString.WaterMark = "解密的内容";
-            this.decryString.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.decryString.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.decryptString.CustomButton.Image = null;
+            this.decryptString.CustomButton.Location = new System.Drawing.Point(207, 1);
+            this.decryptString.CustomButton.Name = "";
+            this.decryptString.CustomButton.Size = new System.Drawing.Size(233, 233);
+            this.decryptString.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.decryptString.CustomButton.TabIndex = 1;
+            this.decryptString.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.decryptString.CustomButton.UseSelectable = true;
+            this.decryptString.CustomButton.Visible = false;
+            this.decryptString.Lines = new string[0];
+            this.decryptString.Location = new System.Drawing.Point(23, 365);
+            this.decryptString.MaxLength = 32767;
+            this.decryptString.Multiline = true;
+            this.decryptString.Name = "decryString";
+            this.decryptString.PasswordChar = '\0';
+            this.decryptString.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.decryptString.SelectedText = "";
+            this.decryptString.SelectionLength = 0;
+            this.decryptString.SelectionStart = 0;
+            this.decryptString.ShortcutsEnabled = true;
+            this.decryptString.Size = new System.Drawing.Size(441, 235);
+            this.decryptString.TabIndex = 1;
+            this.decryptString.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.decryptString.UseSelectable = true;
+            this.decryptString.WaterMark = "解密的内容";
+            this.decryptString.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.decryptString.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // button1
             // 
@@ -273,8 +273,8 @@ namespace EncryText
             this.Controls.Add(this.publicKey);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.decryString);
-            this.Controls.Add(this.encryString);
+            this.Controls.Add(this.decryptString);
+            this.Controls.Add(this.encryptString);
             this.MaximizeBox = false;
             this.Name = "Form";
             this.Text = "RSA加密";
@@ -286,8 +286,8 @@ namespace EncryText
 
         #endregion
 
-        private MetroFramework.Controls.MetroTextBox encryString;
-        private MetroFramework.Controls.MetroTextBox decryString;
+        private MetroFramework.Controls.MetroTextBox encryptString;
+        private MetroFramework.Controls.MetroTextBox decryptString;
         private MetroFramework.Controls.MetroButton button1;
         private MetroFramework.Controls.MetroButton button2;
         private MetroFramework.Controls.MetroTextBox publicKey;

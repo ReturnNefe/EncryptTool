@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{8887C667-D545-47BA-9F5E-B556092C45BB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Encry</RootNamespace>
-    <AssemblyName>Encry</AssemblyName>
+    <RootNamespace>EncryptText</RootNamespace>
+    <AssemblyName>EncryptText</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -83,6 +83,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form.resx">
       <DependentUpon>Form.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

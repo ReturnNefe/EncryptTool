@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EncryText
+namespace EncryptText
 {
     public partial class Form : MetroFramework.Forms.MetroForm
     {
@@ -20,13 +20,13 @@ namespace EncryText
         private void button1_Click(object sender, EventArgs e)
         {
             var en = new RetChen.Encryption.RSAEncryption(this.privateKey.Text, this.publicKey.Text);
-            this.decryString.Text = en.Encrypt(this.encryString.Text);
+            this.decryptString.Text = en.Encrypt(this.encryptString.Text);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             var de = new RetChen.Encryption.RSAEncryption(this.privateKey.Text, this.publicKey.Text);
-            this.encryString.Text = de.Decrypt(this.decryString.Text);
+            this.encryptString.Text = de.Decrypt(this.decryptString.Text);
         }
     }
 }

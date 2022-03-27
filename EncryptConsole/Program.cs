@@ -5,7 +5,7 @@ using System.Linq;
 using RetChen.Encryption;
 using System.Diagnostics;
 
-namespace EncryConsole
+namespace EncryptConsole
 {
     internal class Program
     {
@@ -20,7 +20,7 @@ namespace EncryConsole
                     case "-h":
                         {
                             Console.ForegroundColor = ConsoleColor.DarkYellow;
-                            Console.Write("Encry ");
+                            Console.Write("Encrypt ");
                             Console.ForegroundColor = ConsoleColor.DarkGreen;
                             Console.Write("Console ");
                             Console.ResetColor();
@@ -28,7 +28,7 @@ namespace EncryConsole
                             Console.WriteLine("使用 AES & RSA 加密文件.");
 
                             Console.WriteLine();
-                            Console.WriteLine($"使用方法: encryconsole [options] [arguments]");
+                            Console.WriteLine($"使用方法: EncryptConsole [options] [arguments]");
 
                             Console.WriteLine();
                             var optionLines = new string[]
@@ -68,9 +68,9 @@ namespace EncryConsole
 
                             Console.WriteLine();
                             Console.WriteLine("example:");
-                            Console.WriteLine("encryconsole -m 2048");
-                            Console.WriteLine("encryconsole -e input.txt output.txt");
-                            Console.WriteLine("encryconsole -d output.txt result.txt");
+                            Console.WriteLine("EncryptConsole -m 2048");
+                            Console.WriteLine("EncryptConsole -e input.txt output.txt");
+                            Console.WriteLine("EncryptConsole -d output.txt result.txt");
                             break;
                         }
 
